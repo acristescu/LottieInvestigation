@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         }
         row.setOnClickListener {
             animationView.apply {
-                animationView.speed = -speed
+                speed = -speed
                 setMinAndMaxFrame(0, 30)
                 if (!isAnimating) {
                     playAnimation()
